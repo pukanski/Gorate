@@ -19,12 +19,14 @@ Ferramenta CLI de load testing, escrita em Go, que dispara requisições HTTP co
 | Flag | Tipo | Obrigatória? | Descrição |
 |------|------|--------------|-----------|
 | URLs | String/File | sim | O endereço (inline) ou arquivo (file) com os endereços da(s) URL(s) alvo(s)|
-| Método | String | sim | Método HTTP que ira ser usado para as requisições |
+| Total de Requisições | int | sim | O número de requisições desejadas |
+| Método | String | não | Método HTTP que ira ser usado para as requisições, com valor default GET |
 | Body | File | não | O body da requisição selecionada |
 | Headers Customizados | String | não | Os headers da requisição |
 | Timeout | int | não | Tempo em ms para o timeout da requisição |
 | Concorrência | int | não | O número de requisições simultâneas para a URL, com valor default de 10 |
 | Rate limit | int | não | O número de requisições por segundo permitidas, com valor default de 10 |
+
 
 ## Outputs
 Tabela com o relatório contendo 
@@ -33,7 +35,9 @@ Tabela com o relatório contendo
 |------|-----------|-----------|
 |URL|Caminho ou Endpoint|O endpoint testado|
 |RPS|Requisições por Segundo|Indica quantas requisições por segundo o sistema conseguiu processar durante o teste|
-|Erros|Taxa de Erro| A porcentagem de requisições que falharam em relação ao total|
+|Erros|Taxa de Erro|A porcentagem de requisições que falharam em relação ao total|
+|4xx/5xx|Status Codes 4xx/5xx|O número de respostas com código 4xx ou 5xx|
+|Timeouts|Timeouts|O número de timeouts das requisições |
 |P50|Percentil 50|O tempo que 50% das requisições levaram para ser respondidas. Representa a experiência típica dos usuários|
 |P95|Percentil 95|O tempo que cobre 95% das requisições. Indica o comportamento para quase todos os usuários|
 |P99|Percentil 99|O tempo que cobre 99% das requisições. Mostra o pior cenário para os usuários|
