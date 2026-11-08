@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pukanski/loadTesting/internal/metrics"
+	"github.com/pukanski/Gorate/internal/metrics"
 )
 
 func TestPrintReports(t *testing.T) {

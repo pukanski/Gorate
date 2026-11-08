@@ -1,3 +1,3 @@
-module github.com/pukanski/loadTesting
+module github.com/pukanski/Gorate
 
 go 1.26.6

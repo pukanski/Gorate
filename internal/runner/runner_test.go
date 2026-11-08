@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pukanski/loadTesting/internal/config"
+	"github.com/pukanski/Gorate/internal/config"
 )
 
 func TestRun_Success(t *testing.T) {

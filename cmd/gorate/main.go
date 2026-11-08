@@ -7,9 +7,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/pukanski/loadTesting/internal/config"
-	"github.com/pukanski/loadTesting/internal/display"
-	"github.com/pukanski/loadTesting/internal/runner"
+	"github.com/pukanski/Gorate/internal/config"
+	"github.com/pukanski/Gorate/internal/display"
+	"github.com/pukanski/Gorate/internal/runner"
 )
 
 func main() {

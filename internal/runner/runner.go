@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pukanski/loadTesting/internal/config"
-	"github.com/pukanski/loadTesting/internal/metrics"
+	"github.com/pukanski/Gorate/internal/config"
+	"github.com/pukanski/Gorate/internal/metrics"
 )
 
 func executeRequest(ctx context.Context, client *http.Client, url string, cfg *config.Config) metrics.RequestResult {

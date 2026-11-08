@@ -6,7 +6,7 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/pukanski/loadTesting/internal/metrics"
+	"github.com/pukanski/Gorate/internal/metrics"
 )
 
 func PrintReports(out io.Writer, reports []metrics.Report) {
